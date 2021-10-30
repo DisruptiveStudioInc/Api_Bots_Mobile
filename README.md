@@ -155,6 +155,7 @@ El sistema muestra las ultimas 200 operaciones de acuerdo al estado seleccionado
             "Token": "SOL/BTC",
             "Monto": "6.626136531096475"
         }
+    ]
   }
 ```
 
