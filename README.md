@@ -155,9 +155,34 @@ El sistema muestra las ultimas 200 operaciones de acuerdo al estado seleccionado
             "Token": "SOL/BTC",
             "Monto": "6.626136531096475"
         }
-    ]
   }
 ```
 
 *** Nota: Todos los metodos de operaciones devolverán la misma estructura
   
+
+## Estadisticas ## 
+En las estadisticas se entrega el numero de dias restantes de licencia por cada usuario de acuerdo al unico bot que hay en este momento.
+
+** Nota: En el momento de implementar nuevos bots, el parametro de respuesta se actualizara, por favor revisar constatenemente esta documentacion.
+
+- Ruta:
+  - - /Usuario/Estadisticas
+- Metodo:
+- - GET
+
+
+```bash
+curl -XGET -H 'auth-token: TokenGeneradoAnteriormente' -H "Content-type: application/json"  'https://mobile.bot-control.app/Usuario/Estadisticas'
+```
+
+### Respuesta: ###
+
+```json
+  {
+    "isError": true,
+    "data": {
+      "Tiempo_Licencia": 300
+    }
+  }
+```
